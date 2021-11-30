@@ -17,7 +17,7 @@ const countDrops = (sonarInput: number[]): number => {
 // First part
 console.log(countDrops(sonarInput));
 
-const countDropsByTriplets = (sonarInput: number[]): number[] => {
+const arrangeDropsByTriplets = (sonarInput: number[]): number[] => {
   const sumTriplet = (
     currentValue: number,
     currentIndex: number,
@@ -32,4 +32,4 @@ const countDropsByTriplets = (sonarInput: number[]): number[] => {
 };
 
 // Second part
-console.log(countDrops(countDropsByTriplets(sonarInput)));
+console.log(countDrops(arrangeDropsByTriplets(sonarInput)));
